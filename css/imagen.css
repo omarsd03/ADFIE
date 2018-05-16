@@ -1,0 +1,24 @@
+
+		
+		body {
+			background-image: url(../img/nigga.jpg);
+			background-attachment: fixed;
+			margin: 0;
+		}
+
+		#content {
+			background-image:  url(../img/nigga.jpg);
+			background-attachment: fixed;
+			padding: 25px;
+			margin: 100px auto;
+			max-width: 600px;
+		}
+
+
+		#content {
+			-webkit-box-shadow:  1px 1px 5px 3px rgba(0, 0, 0, 0.2);
+     		box-shadow:  1px 1px 5px 3px rgba(0, 0, 0, 0.2);
+		}
+	background-image: url(../img/as.jpg);
+			background-attachment: fixed;
+			margin: 0;

@@ -1,0 +1,55 @@
+header {
+	background: #a02b5a;
+	color:#fff;
+}
+
+aside {
+	background: #fff;
+	color: #000;
+}
+
+article {
+	background: #5e634e;
+	color: #fff;
+}
+
+.main {
+	background: #f2f2f2;
+}
+
+.dinero_actual {
+	background: #5e634e;
+	color: #fff;
+}
+
+.dinero_abonado {
+	background: #5e634e;
+	color: #fff;
+}
+
+footer {
+	background: #453648;
+	color: #fff;
+}
+
+a.icono {
+	width:75px;
+	line-height: 20px;
+	font-size: 30px; /*Tamano Del Icono*/
+	text-decoration: none; /* Quita lo subrayado al enlace */
+	color: #fff; /* Color al icono */
+}
+
+a.icono {
+	width:75px;
+	line-height: 20px;
+	font-size: 30px; /*Tamano Del Icono*/
+	text-decoration: none; /* Quita lo subrayado al enlace */
+	color: #fff; /* Color al icono */
+}
+
+/*Btn cerrar sesion*/
+.cerrar_sesion {
+	background-color: #5e634e;
+	transform: translateX(-250) translateY(60);
+}
