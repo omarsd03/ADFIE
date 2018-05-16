@@ -9,8 +9,8 @@ aside {
 }
 
 article {
-	background: #5e634e;
-	color: #fff;
+	background: #fff;
+	color: #000;
 }
 
 .main {
@@ -18,17 +18,17 @@ article {
 }
 
 .dinero_actual {
-	background: #5e634e;
-	color: #fff;
+	background: #fff;
+	color: #000;
 }
 
 .dinero_abonado {
-	background: #5e634e;
-	color: #fff;
+	background: #fff;
+	color: #000;
 }
 
 footer {
-	background: #453648;
+	background: #a02b5a;
 	color: #fff;
 }
 
@@ -45,11 +45,11 @@ a.icono {
 	line-height: 20px;
 	font-size: 30px; /*Tamano Del Icono*/
 	text-decoration: none; /* Quita lo subrayado al enlace */
-	color: #fff; /* Color al icono */
+	color: #000; /* Color al icono */
 }
 
 /*Btn cerrar sesion*/
 .cerrar_sesion {
-	background-color: #5e634e;
+	/*background-color: #;*/
 	transform: translateX(-250) translateY(60);
 }

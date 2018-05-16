@@ -27,44 +27,7 @@
 				<div class="dinero_actual col-xs-12 col-sm-6 col-md-6 col-lg-6">
 					<h3>Gastos Constantes:</h3>
 					<br>
-					<table class="table table-bordered">
-
-						<thead>
-							<tr>
-								<th colspan="1"> <a href="formulario.php">Nuevo</a> </th>
-								<th colspan="5" align="middle"> Lista de Gastos </th>
-							</tr>
-						</thead>
-
-						<tbody>
-							<tr>
-								<td>Id</td>
-								<td>Descripcion</td>
-								<td>Cantidad</td>
-								<td>Constante o Normal</td>
-								<td colspan="2" align="middle">Opciones</td>
-							</tr>
-
-							<?php  
-								/*include 'pruebaconexion.php';
-								$query = "SELECT * FROM usuarios";
-								$resultado = $conexion->query($query);
-								while ($row=$resultado->fetch_assoc()) {
-									# code...*/
-							?>
-									<tr>
-										<td><?php// echo $row['id']; ?></td>
-										<td><?php// echo $row['user']; ?></td>
-										<td><?php// echo $row['password']; ?></td>
-										<td><?php// echo $row['perfil']; ?></td>
-										<!--><td><a href="modificar.php?id=<?php // echo $row['id']; ?>">Modificar</a></td>
-										<td><a href="eliminar.php?id=<?php // echo $row['id']; ?>">Eliminar</a></td></!-->
-									</tr>
-							<?php 
-								//}
-							 ?>
-						</tbody>
-					</table>
+					
 				</div>
 
 				<div class="dinero_abonado col-xs-12 col-sm-6 col-md-6 col-lg-6">
