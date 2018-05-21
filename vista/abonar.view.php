@@ -20,17 +20,27 @@
 			<div class="row">  
 				<div class="dinero_actual col-xs-12 col-sm-6 col-md-6 col-lg-6">
 					<h3>Cantidad a Agregar</h3>
-					<form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" class="form">
+
+					<form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" class="form" method="POST" name="abonar">
 						<div class="form-group" align="center">
 							<label for="descripcion">Descripcion: </label>
-							<input type="text" class="form-control" id="descripcion" placeholder="Pasaje, Comida, etc.." >
+							<input type="text" class="form-control" name="descripcion" id="descripcion" placeholder="Pasaje, Comida, etc.." >
 							<br>
 							<label for="precio">Precio: </label>
-							<input type="text" class="form-control" id="precio" placeholder="$0.00">
+							<input type="text" class="form-control" name="precio" id="precio" placeholder="$0.00">
 							<br>
-							<button id="botones" type="submit" class="btn btn-primary" onclick="">Agregar Gasto</button>
+							<button id="botones" type="submit" class="btn btn-primary" name="abonar">Agregar Gasto</button>
 						</div>
+
+						<?php if (!empty($errores)): ?>
+							<div class="error">
+								<ul>
+									<?php echo $errores; ?>
+								</ul>
+							</div>
+						<?php endif; ?>
 					</form>
+
 					<br>
 				</div>
 				<div class="dinero_abonado col-xs-12 col-sm-6 col-md-6 col-lg-6">
