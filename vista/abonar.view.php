@@ -20,11 +20,15 @@
 			<div class="row">  
 				<div class="dinero_actual col-xs-12 col-sm-6 col-md-6 col-lg-6">
 					<h3>Cantidad a Agregar</h3>
-					<form action="" class="form-inline">
+					<form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" class="form">
 						<div class="form-group" align="center">
-							<label for="cantidad"> Cantidad: </label>
-							<input type="text" class="form-control" id="cantidad" placeholder="$0.00">
-							<button type="submit" class="btn btn-primary" onclick="crear(this)">Enviar</button>
+							<label for="descripcion">Descripcion: </label>
+							<input type="text" class="form-control" id="descripcion" placeholder="Pasaje, Comida, etc.." >
+							<br>
+							<label for="precio">Precio: </label>
+							<input type="text" class="form-control" id="precio" placeholder="$0.00">
+							<br>
+							<button id="botones" type="submit" class="btn btn-primary" onclick="">Agregar Gasto</button>
 						</div>
 					</form>
 					<br>
@@ -33,7 +37,9 @@
 					<h3>Dinero Abonado</h3>
 					<form action="" class="form-inline">
 						<div class="form-group" align="center">
-							<div id="div_resultado">Sin resultado</div>
+							<div id="div_resultado">
+
+							</div>
 						</div>
 					</form>
 					<br>

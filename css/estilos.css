@@ -60,6 +60,11 @@ a.icono {
 	border: 1px solid #fff;
 }
 
+#botones {
+	background: #a02b5a;
+	border: 1px solid #fff;
+}
+
 .cerrar_sesion a:hover {
 	background: #a02b5a;
 	border: 1px solid #fff;
