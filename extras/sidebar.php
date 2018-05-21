@@ -3,7 +3,7 @@
 						<div class="clearfix visible-lg-block"></div>
 						<aside class="col-md-3 col-lg-3">
 							<div class="container">
-								<h3>Referencias</h3>
+								<h3><span class="bienvenido"><i class="icon icon-user-check"></i></span> Bienvenid@ <?php echo $_SESSION['usuario']; ?> </h3>
 								<ul>
 									<li><a href="http://itcuautla.edu.mx" tabindex="3" target="popup1"><img class="img-responsive" src="img/itc.png" width="180" height="150"></a></li>
 

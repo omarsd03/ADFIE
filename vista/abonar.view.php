@@ -19,7 +19,7 @@
 			<?php include 'extras/sidebar.php'; ?>	
 			<div class="row">  
 				<div class="dinero_actual col-xs-12 col-sm-6 col-md-6 col-lg-6">
-					<h3>Cantidad a Agregar</h3>
+					<h3>Registra tu nuevo gasto</h3>
 
 					<form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" class="form" method="POST" name="abonar">
 						<div class="form-group" align="center">
@@ -48,7 +48,7 @@
 					<form action="" class="form-inline">
 						<div class="form-group" align="center">
 							<div id="div_resultado">
-
+								<h3>Producto: <?php echo $resul['0']; ?> </h3>
 							</div>
 						</div>
 					</form>

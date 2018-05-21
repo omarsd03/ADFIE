@@ -29,21 +29,16 @@
 				<div class="dinero_abonado col-xs-12 col-sm-6 col-md-6 col-lg-6">
 					<h3>Agregar nuevo gasto constante</h3>
 					<br>
-					<form action="" class="form-inline">
+					<form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" class="form" method="POST" name="abonar">
 						<div class="form-group" align="center">
-							<label>Descripcion</label>
-							<input class="form-control" type="text" placeholder="Pasajes, Comida, etc..">
+							<label for="descripcion">Descripcion: </label>
+							<input type="text" class="form-control" name="descripcion" id="descripcion" placeholder="Pasaje, Comida, etc.." >
+							<br>
+							<label for="precio">Precio: </label>
+							<input type="text" class="form-control" name="precio" id="precio" placeholder="$0.00">
+							<br>
+							<button id="botones" type="submit" class="btn btn-primary" name="abonar">Agregar Gasto</button>
 						</div>
-						<br><br>
-						<div class="form-group" align="center">
-							<label for="cantidad">Cantidad</label>
-							<input class="form-control" id="cantidad" type="text" placeholder="100.00">
-						</div>
-						<br><br>
-						<div class="form-group" align="center">
-							<button class="btn btn-primary">Agregar</button>
-						</div>
-						<br><br>
 					</form>
 				</div>
 			</div>

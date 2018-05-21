@@ -39,6 +39,14 @@
 			$statement->execute(array(':descripcion' => $descripcion, ':precio' => $precio));
 			$res = $statement->fetch();
 
+			$stmnt = $conexion->prepare("SELECT SUM(b.precio) FROM usuarios a LEFT JOIN gastos b ON a.id = b.id WHERE a.usuario = '$usuario'");
+			$stmnt->execute();
+			$resul = $stmnt->fetch();
+
+			foreach ($resul as $total) {
+				echo $total['0'];
+			}
+
 			/*if ($res == false) {
 				echo "No se almacenaron los datos";
 				echo $_SESSION['usuario'];
