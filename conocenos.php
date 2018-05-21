@@ -1,9 +1,15 @@
 <?php session_start();
 
 	if (isset($_SESSION['usuario'])) {
-		require 'vista/conocenos.view.php';
+		$validado = 1;
 	} else {
 		header('Location: login.php');
+	}
+
+	
+
+	if ($validado == 1) {
+		require 'vista/conocenos.view.php';
 	}
 	
 ?>

@@ -1,7 +1,7 @@
 <?php session_start();
 
 	if (isset($_SESSION['usuario'])) {
-		require 'vista/gastos_constantes.view.php';
+		$validado = 1;
 	} else {
 		header('Location: login.php');
 	}
@@ -35,6 +35,10 @@
 				echo $total['0'];
 			}*/
 		}
+	}
+
+	if ($validado == 1) {
+		require 'vista/gastos_constantes.view.php';
 	}
 	
 ?>
