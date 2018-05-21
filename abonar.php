@@ -1,9 +1,28 @@
 <?php session_start();
 
 	if (isset($_SESSION['usuario'])) {
-		require 'vista/abonar.view.php';
+		$validado = 1;
 	} else {
 		header('Location: login.php');
+	}
+
+	function sumarValores() {
+		$usuario = $_SESSION['usuario'];
+
+			try {
+				$conexion = new PDO('mysql:host=localhost;dbname=adfie','root','omar');
+			} catch (PDOException $e) {
+				echo "Error: " . $e->getMessage();
+			}
+
+			$stmnt = $conexion->prepare("SELECT SUM(b.precio) FROM usuarios a LEFT JOIN gastos b ON a.id = b.id WHERE a.usuario = '$usuario'");
+			$stmnt->execute();
+			$resul = $stmnt->fetchAll();
+
+			foreach ($resul as $total) {
+				echo '<h1>' . $total['0'] . '</h1>';
+				echo $total['0'];
+			}
 	}
 
 	if ($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -70,6 +89,10 @@
 				echo "Datos almacenados";
 			}
 		} */
+	}
+
+	if ($validado == 1) {
+		require 'vista/abonar.view.php';
 	}
 
 	

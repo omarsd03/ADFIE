@@ -26,23 +26,8 @@
 				</div>
 
 				<div class="dinero_abonado col-xs-12 col-sm-6 col-md-6 col-lg-6">
-					<h3>Agregar gasto</h3>
-					<form action="" class="form-inline">
-						<div class="form-group" align="center">
-							<label>Descripcion</label>
-							<input class="form-control" type="text" placeholder="Pasajes, Comida, etc..">
-						</div>
-						<br><br>
-						<div class="form-group" align="center">
-							<label for="cantidad">Cantidad</label>
-							<input class="form-control" id="cantidad" type="text" placeholder="100.00">
-						</div>
-						<br><br>
-						<div class="form-group" align="center">
-							<button class="btn btn-primary">Agregar</button>
-						</div>
-						<br><br>
-					</form>
+					<h3>Estimaciones de Gastos</h3>
+					
 				</div>
 			</div>
 		</div>

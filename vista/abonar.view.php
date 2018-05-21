@@ -44,14 +44,10 @@
 					<br>
 				</div>
 				<div class="dinero_abonado col-xs-12 col-sm-6 col-md-6 col-lg-6">
-					<h3>Dinero Abonado</h3>
-					<form action="" class="form-inline">
-						<div class="form-group" align="center">
-							<div id="div_resultado">
-								<h3>Producto: <?php echo $resul['0']; ?> </h3>
-							</div>
-						</div>
-					</form>
+					<h3>Dinero Acumulado en Gastos</h3>
+					<?php
+						sumarValores();
+					?>
 					<br>
 				</div>
 			</div>

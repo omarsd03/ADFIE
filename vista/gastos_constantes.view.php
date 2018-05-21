@@ -29,7 +29,7 @@
 				<div class="dinero_abonado col-xs-12 col-sm-6 col-md-6 col-lg-6">
 					<h3>Agregar nuevo gasto constante</h3>
 					<br>
-					<form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" class="form" method="POST" name="abonar">
+					<form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" class="form" method="POST" name="gastos_constantes">
 						<div class="form-group" align="center">
 							<label for="descripcion">Descripcion: </label>
 							<input type="text" class="form-control" name="descripcion" id="descripcion" placeholder="Pasaje, Comida, etc.." >
