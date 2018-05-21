@@ -14,21 +14,24 @@
 	
 	<?php include 'extras/header.php'; ?>
 
-	
-
 	<div id="content">
 		<div class="container-fluid">
 			<?php include 'extras/sidebar.php'; ?>
 
 			<div class="row">  
 				<div class="dinero_actual col-xs-12 col-sm-6 col-md-6 col-lg-6">
-					<h3>Dinero En Cartera Actual</h3>
-					<p>
-						En este momento tienes:
-					</p>
-					<fieldset>
-						<div id="div_resultado">Aqui va tu cantidad</div>
-					</fieldset>
+					<h3>Lo que tienes programado para gastar</h3>
+					<h1> <?php mostrarCantidad() ?> </h1>
+					<form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" class="form" method="POST" name="agregar">
+						<div class="form-group" align="center">
+
+							<label for="cantidad">Cantidad: </label>
+							<input type="text" class="form-control" name="cantidad" id="cantidad" placeholder="$0.00">
+							<br>
+							<button id="botones" type="submit" class="btn btn-primary" name="agregar">Agregar Cantidad</button>
+
+						</div>
+					</form>
 				</div>
 				<div class="dinero_abonado col-xs-12 col-sm-6 col-md-6 col-lg-6">
 					<h3>Dinero Abonado</h3>
