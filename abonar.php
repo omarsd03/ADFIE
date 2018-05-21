@@ -21,28 +21,37 @@
 				echo "Error: " . $e->getMessage();
 			}
 
-			/* $stmnt = $conexion->prepare('SELECT id FROM usuarios WHERE usuario = '.$_SESSION['usuario'].' ');
-			$stmnt->execute();
-			$res = $stmnt->fetchAll();
+			$usuario = $_SESSION['usuario'];
 
-			if ($res != false) {
-				foreach ($res as $row) {
-					echo $row['id'];
-				}
+			$stmt = $conexion->prepare("SELECT id FROM usuarios WHERE usuario = '$usuario'");
+			$stmt->execute();
+			$resul = $stmt->fetchAll();
+
+			if ($resul != false) {
+				echo "yeip";
 			}
 			else {
-				echo "no se cumplio..";
-			} */
+				echo "vale verga";
+			}
 
-			$statement = $conexion->prepare('INSERT INTO gastos (id_gasto, id, descripcion, precio) VALUES (null, '.$_SESSION['id'].' :descripcion, :precio) ');
+			foreach ($resul as $id) {
+				echo $id['0'];
+				//$a=(string)$id[0]['NAME'];
+				$a = implode(',', $id);
+				echo $a;
+			}
+
+			$statement = $conexion->prepare("INSERT INTO gastos (id_gasto, id, descripcion, precio) VALUES (null, '1', :descripcion, :precio) ");
 			$statement->execute(array(':descripcion' => $descripcion, ':precio' => $precio));
 			$res = $statement->fetch();
 
 			if ($res == false) {
 				echo "No se almacenaron los datos";
+				echo $_SESSION['usuario'];
 			}
 			else {
 				echo "Datos almacenados";
+				echo $_SESSION['usuario'];
 			}
 		}
 
