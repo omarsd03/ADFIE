@@ -52,4 +52,24 @@ a.icono {
 .cerrar_sesion {
 	/*background-color: #;*/
 	transform: translateX(-250) translateY(60);
+	color: #fff;
+}
+
+.cerrar_sesion a {
+	background: #a02b5a;
+	border: 1px solid #fff;
+}
+
+.cerrar_sesion a:hover {
+	background: #a02b5a;
+	border: 1px solid #fff;
+	color: #fff;
+}
+
+footer a .icon-facebook {
+	color: #fff;
+}
+
+footer a .icon-instagram {
+	color: #fff;
 }

@@ -15,12 +15,18 @@
 									<br>
 
 									<li><a href="https://open.spotify.com/browse" tabindex="7" target="popup5" class="btn btn-success" title="Haz clic para escucharla!!"><span class="icon icon-spotify"></span> Escucha Música en Spotify</a></li>
+									<br>
+									<li>
+										<div class="cerrar_sesion">
+											<a href="cerrar.php" id="cerrar" class="btn btn-warning"><span class="cerrar_sesion"><i class="icon icon-switch"></i></span> Cerrar Sesion</a>
+										</div>
+									</li>
 								</ul>
 							</div>
 						</aside>
 						
 						<article class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
-							<h3>Novedades e Informes</h3>
+							<h3>Disfruta una recomendacion.. :D</h3>
 							<div class="embed-responsive embed-responsive-16by9">
 								<iframe width="560" height="315" src="https://www.youtube.com/embed/71Es-8FfATo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 							</div>

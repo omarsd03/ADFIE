@@ -14,9 +14,7 @@
 	
 	<?php include 'extras/header.php'; ?>
 
-	<div class="cerrar_sesion">
-		<a href="cerrar.php" id="cerrar" class="btn btn-warning"><span class="cerrar_sesion"><i class="icon icon-switch"></i></span> Cerrar Sesion</a>
-	</div>
+	
 
 	<div id="content">
 		<div class="container-fluid">

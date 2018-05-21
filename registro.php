@@ -15,7 +15,7 @@
 			$errores .= '<li>Por favor llena los campos correctamente</li>';
 		} else {
 			try {
-				$conexion = new PDO('mysql:host=localhost;dbname=login','root','omar');
+				$conexion = new PDO('mysql:host=localhost;dbname=adfie','root','omar');
 			} catch (PDOException $e) {
 				echo "Error: " . $e->getMessage();
 			}

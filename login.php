@@ -12,7 +12,7 @@
 		$password = hash('sha512', $password);
 
 		try {
-			$conexion = new PDO('mysql:host=localhost;dbname=login','root','omar');
+			$conexion = new PDO('mysql:host=localhost;dbname=adfie','root','omar');
 		} catch (PDOException $e) {
 			echo "Error" . $e->getMessage();
 		}
