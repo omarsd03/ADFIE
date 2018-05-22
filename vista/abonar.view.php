@@ -32,19 +32,12 @@
 							<button id="botones" type="submit" class="btn btn-primary" name="abonar">Agregar Gasto</button>
 						</div>
 
-						<?php if (!empty($errores)): ?>
-							<div class="error">
-								<ul>
-									<?php echo $errores; ?>
-								</ul>
-							</div>
-						<?php endif; ?>
 					</form>
 
 					<br>
 				</div>
 				<div class="dinero_abonado col-xs-12 col-sm-6 col-md-6 col-lg-6">
-					<h3>Dinero Acumulado en Gastos</h3>
+					<h3>Acumulado en Gastos</h3>
 					<?php
 						sumarValores();
 					?>

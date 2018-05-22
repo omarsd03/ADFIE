@@ -21,10 +21,12 @@
 			$resul = $stmnt->fetchAll();
 
 			foreach ($resul as $total) {
-				echo '<h1>' . $total['0'] . '</h1>';
+				echo '<h1> $' . $total['0'] . '</h1>';
 				//echo $total['0'];
 			}
 	}
+
+	
 
 	if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 		$cantidad = $_POST['cantidad'];
@@ -51,9 +53,6 @@
 					echo '<h1>' . $total['0'] . '</h1>';
 					echo $total['0'];
 				}
-			}
-			else {
-				echo "nel";
 			}
 		}
 	}

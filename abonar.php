@@ -20,8 +20,8 @@
 			$resul = $stmnt->fetchAll();
 
 			foreach ($resul as $total) {
-				echo '<h1>' . $total['0'] . '</h1>';
-				echo $total['0'];
+				echo '<h1> $' . $total['0'] . '</h1>';
+				//echo $total['0'];
 			}
 	}
 
@@ -63,7 +63,7 @@
 			$resul = $stmnt->fetch();
 
 			foreach ($resul as $total) {
-				echo $total['0'];
+				//echo $total['0'];
 			}
 
 			/*if ($res == false) {

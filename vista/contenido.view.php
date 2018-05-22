@@ -34,13 +34,8 @@
 					</form>
 				</div>
 				<div class="dinero_abonado col-xs-12 col-sm-6 col-md-6 col-lg-6">
-					<h3>Dinero Abonado</h3>
-					<p>
-						Al principio abonaste:
-					</p>
-					<fieldset>
-						<div id="div_resultado">Aqui va tu cantidad</div>
-					</fieldset>
+					<h3>En este momento tienes:</h3>
+					<h1><?php ; ?></h1>
 				</div>
 			</div>
 		</div>
